@@ -6,6 +6,6 @@ import retrofit2.http.GET
 interface DogEndpointInterface {
 
     @GET("image/random")
-    fun getRandomDogImage(): Call<RandomDogImageResponse>
+    suspend fun getRandomDogImage(): RandomDogImageResponse
 
 }
